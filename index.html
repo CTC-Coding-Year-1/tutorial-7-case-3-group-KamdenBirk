@@ -11,7 +11,7 @@
       Date:   12/12/23
 
       Filename:   index.html
-      Step:15
+
    -->
    
    <meta charset="utf-8" />
@@ -77,7 +77,7 @@
                <legend>Fonts</legend><!--Josh-->
                <label for="fontfamily">Font Family</label> <!--Jacob-->
                <select id="fontfamily" name="fontfamily">
-                  <optgroup label="generic"><!--Kamden-->
+                  <optgroup label="generic"><!--Kamden--> <!--Sections the nested options from the other options to better organize the list-->
                      <option value="default">default</option> <!--Jacob-->
                      <option value="serif">serif</option><!--Jacob-->
                      <option value="sans-serif">sans-serif </option><!--Jacob-->
@@ -85,7 +85,7 @@
                      <option value="cursive">cursive</option><!--Jacob-->
                      <option value="fantasy">fantasy</option>  <!--Jacob-->
                   </optgroup>
-                  <optgroup label="specific"><!--Kamden-->
+                  <optgroup label="specific"><!--Kamden--><!--Sections the nested options from the other options to better organize the list-->
                      <option value="Arial">Arial</option> <!--Jacob-->
                      <option value="Book Antiqua">Book Antiqua</option><!--Jacob-->
                      <option value="Courier New">Courier New  </option><!--Jacob-->
@@ -107,7 +107,7 @@
                   <option value="bold">bold</option>
                </select>
                
-               <label for="textdecoration">Text Decoration</label><!--Kamden-->
+               <label for="textdecoration">Text Decoration</label><!--Kamden--><!--Creates a selection list for different text decoration with a label above-->
                <select name="textdecoration" id="textdecoration"><!--Kamden-->
                   <option value="none">none</option><!--Kamden-->
                   <option value="line-through">line-through</option><!--Kamden-->
@@ -135,6 +135,29 @@
                <input type="color" name="color" id="color" value="#000000">
                <label for="backgroundcolor">Background Color (hexadecimal)</label>
                <input type="color" name="backgroundcolor" id="backgroundcolor" value="#FFFFFF" placeholder="#rrggbb">
+            </fieldset>
+            <fieldset>
+               <legend>Sizes</legend>
+                  <label for="fontsize">Font size (px)</label>
+                     <div class="slider">
+                        8<input id="fontsize" name="fontsize" type="range" value="14" step="1" min="8" max="40">40
+                     </div>
+                  <label for="letterspacing">Letter Spacing (px)</label>
+                     <div class="slider">
+                        0<input type="range" id="letterspacing" name="letterspacing" value="0" step="1" min="0" max="10">10
+                     </div>
+                  <label for="wordspacing">Word Spacing (px)</label>
+                     <div class="slider">
+                        0<input type="range" id="wordspacing" name="wordspacing" value="0" step="1" min="0" max="10">10
+                     </div>
+                  <label for="lineheight">Line Height (em)</label>
+                     <div class="slider">
+                        0<input type="range" id="lineheight" name="lineheight" value="1" step="0.2" min="0" max="4">4
+                     </div>
+                  <label for="textindent">Text Indent (px)</label>
+                     <div class="slider">
+                        0<input type="range" id="textindent" name="textindent" value="0" step="1" min="0" max="10">10
+                     </div>
             </fieldset>
          </form>
          <h2>Rendered Text</h2>
